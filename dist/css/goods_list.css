@@ -1,0 +1,118 @@
+html,
+body,
+.pyg_view {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.pyg_view {
+  overflow: scroll;
+}
+.pyg_header {
+  padding: 5px;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.pyg_footer {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pyg_footer a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  padding-top: 5px;
+  border-top: 1px solid #d6d6d6;
+}
+.pyg_footer a > i {
+  font-size: 18px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #0094ff;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+}
+.header span {
+  font-size: 18px;
+}
+.header i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 22px;
+}
+.pyg_view {
+  background-color: #fff;
+}
+.pyg_view .goods_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pyg_view .goods_list li {
+  border-bottom: 1px solid #ddd;
+}
+.pyg_view .goods_list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #808080;
+  padding: 10px;
+}
+.pyg_view .goods_list a img {
+  width: 75%;
+}
+.pyg_view .goods_list a .goods_left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.pyg_view .goods_list a .goods_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+.pyg_view .goods_list a .goods_right .goods_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=goods_list.css.map */

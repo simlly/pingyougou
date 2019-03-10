@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>28-品优购</title>
+  <!-- <link rel="stylesheet" href="./css/base.css"> -->
+  <link rel="stylesheet" href="./lib/mui/css/mui.css">
+  <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/goods_list.css" />
+</head>
+
+<body>
+ <div class="header"><span>搜索</span> <i class="fa fa-search"></i></div>
+  <div class="pyg_view">
+   
+  </div>
+  @@include('footer.html')
+
+</body>
+<script type="text/html" id="goodsTpl">
+  <ul class="goods_list">
+    {{each arr item index}}
+      <li>
+        <a href="#">
+          <div class="goods_left">
+            <img src="{{item.goods_small_logo}}" alt="">
+          </div>
+          <div class="goods_right">
+            <div class="goods_name">{{item.goods_name}}</div>
+            <div class="goods_price">￥{{item.goods_price}}</div>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+</script>
+
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./lib/iscroll/iscroll.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/goods_list.js"></script>
+</html>

@@ -46,31 +46,31 @@ body {
   display: flex;
   overflow: hidden;
 }
-.pyg_view > .left_box {
+.pyg_view .left_box {
   width: 100px;
-  overflow: scroll;
+  overflow: hidden;
 }
-.pyg_view > .left_box > .left_menu {
+.pyg_view .left_box .left_menu {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.pyg_view > .left_box > .left_menu li {
+.pyg_view .left_box .left_menu li {
   height: 40px;
   font-size: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.pyg_view > .left_box > .left_menu .active {
+.pyg_view .left_box .left_menu .active {
   background-color: #fff;
   border-left: 5px solid #0094ff;
 }
-.pyg_view > .right_box {
+.pyg_view .right_box {
   flex: 1;
-  overflow: scroll;
+  overflow: hidden;
 }
-.pyg_view > .right_box > .rigth_item .item_title {
+.pyg_view .right_box .rigth_item .item_title {
   height: 40px;
   display: flex;
   padding-left: 15px;
@@ -78,21 +78,21 @@ body {
   font-size: 14px;
   color: #0094ff;
 }
-.pyg_view > .right_box > .rigth_item .item_list {
+.pyg_view .right_box .rigth_item .item_list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
-.pyg_view > .right_box > .rigth_item .item_list li {
+.pyg_view .right_box .rigth_item .item_list li {
   width: 33.33%;
   text-align: center;
 }
-.pyg_view > .right_box > .rigth_item .item_list li a {
+.pyg_view .right_box .rigth_item .item_list li a {
   font-size: 13px;
   color: #000;
 }
-.pyg_view > .right_box > .rigth_item .item_list li a img {
+.pyg_view .right_box .rigth_item .item_list li a img {
   width: 80%;
 }
