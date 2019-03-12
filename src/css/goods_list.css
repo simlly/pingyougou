@@ -64,6 +64,7 @@ body {
   font-size: 22px;
 }
 .pyg_view {
+  position: relative;
   background-color: #fff;
 }
 .pyg_view .goods_list {

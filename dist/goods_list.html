@@ -13,9 +13,13 @@
 </head>
 
 <body>
- <div class="header"><span>搜索</span> <i class="fa fa-search"></i></div>
+  <div class="header"><span>搜索</span> <i class="fa fa-search"></i></div>
   <div class="pyg_view">
-   
+    <div>
+      <ul class="goods_list">
+      </ul>
+    </div>
+
   </div>
   <footer class="pyg_footer">
     <a href="index.html">
@@ -39,21 +43,19 @@
 
 </body>
 <script type="text/html" id="goodsTpl">
-  <ul class="goods_list">
-    {{each arr item index}}
-      <li>
-        <a href="#">
-          <div class="goods_left">
-            <img src="{{item.goods_small_logo}}" alt="">
-          </div>
-          <div class="goods_right">
-            <div class="goods_name">{{item.goods_name}}</div>
-            <div class="goods_price">￥{{item.goods_price}}</div>
-          </div>
-        </a>
-      </li>
-      {{/each}}
-    </ul>
+          {{each arr item index}}
+            <li>
+              <a href="#">
+                <div class="goods_left">
+                  <img src="{{item.goods_small_logo}}" alt="">
+                </div>
+                <div class="goods_right">
+                  <div class="goods_name">{{item.goods_name}}</div>
+                  <div class="goods_price">￥{{item.goods_price}}</div>
+                </div>
+              </a>
+            </li>
+            {{/each}}
 </script>
 
 <script src="./lib/mui/js/mui.js"></script>
@@ -62,4 +64,5 @@
 <script src="./lib/iscroll/iscroll.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/goods_list.js"></script>
+
 </html>
