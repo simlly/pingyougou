@@ -34,7 +34,7 @@
       <i class="fa fa-shopping-cart"></i>
       <div class="linkname">购物车</div>
     </a>
-    <a href="javascript:;">
+    <a href="register.html">
       <i class="fa fa-user"></i>
       <div class="linkname">个人中心</div>
     </a>
@@ -45,7 +45,7 @@
 <script type="text/html" id="goodsTpl">
           {{each arr item index}}
             <li>
-              <a href="#">
+              <a href="goods_detail.html?goods_id={{item.goods_id}}">
                 <div class="goods_left">
                   <img src="{{item.goods_small_logo}}" alt="">
                 </div>
@@ -57,7 +57,6 @@
             </li>
             {{/each}}
 </script>
-
 <script src="./lib/mui/js/mui.js"></script>
 <script src="./lib/zepto/zepto.js"></script>
 <script src="./lib/arttemplate/template-web.js"></script>

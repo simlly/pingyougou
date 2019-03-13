@@ -70,5 +70,13 @@ body {
   -webkit-animation: fa-spin 1s infinite linear;
           animation: fa-spin 1s infinite linear;
 }
+.pyg_view {
+  padding: 10px;
+}
+.pyg_view .login_btn a {
+  display: block;
+  width: 100%;
+  margin: 10px;
+}
 
-/*# sourceMappingURL=common.css.map */
+/*# sourceMappingURL=login.css.map */

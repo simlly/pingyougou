@@ -10,6 +10,7 @@ $(function () {
     init()
     // mui上拉刷新下拉加载
     function init() {
+        eventList();
         mui.init({
             pullRefresh: {
                 container: ".pyg_view",
@@ -53,7 +54,18 @@ $(function () {
                 }
             }
         });
-
+       
+    }
+    // 因为在MUI框架中  会默认a标签不跳转   所以 用tap事件  跳转
+    function eventList(){
+        // a标签  绑定tap点击事件    (箭头函数this是不绑定的   或获取上下函数的this做自己的)
+        $('.goods_list').on('tap','a',function(){
+            let href=this.href;
+            location.href=href;
+            // console.log(this.href)
+        })
+       
+      
     }
     // 发送请求  获取商品列表的详细信息
     function getGoodsData(cd) {

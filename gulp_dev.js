@@ -73,7 +73,8 @@ gulp.task("autopage", () => {
     server:{
       baseDir:"./dist/"
     },
-    port:9999
+    port:9999,
+    notify:false
   });
   gulp.watch(["src/*.html","src/components/*.html"],gulp.series(["html","reload"]));
   gulp.watch(["src/css/*.less"],gulp.series(["css","reload"]));

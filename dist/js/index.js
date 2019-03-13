@@ -16,12 +16,10 @@ $(function () {
       if (result.meta.status == 200) {
         // 获取成功
         var data = result.data;
-
-        var _html = template('slideTpl', {
+        var html = template('slideTpl', {
           arr: data
         });
-
-        $('.pyg_slide').html(_html); // 初始化轮播图
+        $('.pyg_slide').html(html); // 初始化轮播图
 
         var gallery = mui('.mui-slider');
         gallery.slider({
@@ -39,13 +37,13 @@ $(function () {
       var data = result.data;
 
       if (result.meta.status == 200) {
-        var _html2 = '';
+        var html = '';
 
         for (var i = 0; i < data.length; i++) {
-          _html2 += " <a href=\"javascript:;\"><img src=\"".concat(data[i].image_src, "\" alt=\"\"></a>");
+          html += " <a href=\"javascript:;\"><img src=\"".concat(data[i].image_src, "\" alt=\"\"></a>");
         }
 
-        $('.pyg_cates').html(_html2); // console.log(html);
+        $('.pyg_cates').html(html); // console.log(html);
       } else {
         console.log('请求失败');
       }
@@ -58,16 +56,14 @@ $(function () {
       var data = result.data;
 
       if (result.meta.status == 200) {
-        var _html3 = template('goodsTpl', {
+        var html = template('goodsTpl', {
           arr: data
         });
-
-        $('.pyg_goodslist').html(_html3);
+        $('.pyg_goodslist').html(html);
       } else {
         console.log('请求失败');
-      }
+      } // console.log(html)
 
-      console.log(html);
     });
   }
 });

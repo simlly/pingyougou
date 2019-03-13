@@ -70,74 +70,30 @@ body {
   -webkit-animation: fa-spin 1s infinite linear;
           animation: fa-spin 1s infinite linear;
 }
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 45px;
-  background-color: #0094ff;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-}
-.header span {
-  font-size: 18px;
-}
-.header i {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 22px;
-}
 .pyg_view {
-  position: relative;
-  background-color: #fff;
-}
-.pyg_view .goods_list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.pyg_view .goods_list li {
-  border-bottom: 1px solid #ddd;
-}
-.pyg_view .goods_list a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #808080;
   padding: 10px;
 }
-.pyg_view .goods_list a img {
-  width: 75%;
+.pyg_view .verify {
+  position: relative;
 }
-.pyg_view .goods_list a .goods_left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.pyg_view .verify_btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: auto;
+  padding: 6px;
 }
-.pyg_view .goods_list a .goods_right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.pyg_view .register_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  overflow: hidden;
 }
-.pyg_view .goods_list a .goods_right .goods_name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.pyg_view .register_btn a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  margin: 20px 5px;
 }
 
-/*# sourceMappingURL=goods_list.css.map */
+/*# sourceMappingURL=register.css.map */
