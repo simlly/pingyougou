@@ -83,12 +83,12 @@ body {
   width: auto;
   padding: 6px;
 }
-.pyg_view .register_btn {
+.pyg_view .register_tool {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.pyg_view .register_btn a {
+.pyg_view .register_tool a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
